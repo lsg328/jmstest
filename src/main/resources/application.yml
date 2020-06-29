@@ -1,0 +1,11 @@
+project:
+  mq:
+    host: 192.168.0.116
+    port: 1414
+    queue-manager: QM_ZJJC_A10000146000208_01
+    channel: JAVA.CHANNEL
+    queue: PBC.C1010246000016.BATCH.IN
+    username: mqm
+    password: mqm
+    receive-timeout: 20000
+    messages: testmessage1
