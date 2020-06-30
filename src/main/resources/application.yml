@@ -8,4 +8,6 @@ project:
     username: mqm
     password: mqm
     receive-timeout: 20000
-    messages: testmessage1
+    message-type: file
+    message: test
+    message-path: C:\Users\Administrator\Desktop\海南人行\test

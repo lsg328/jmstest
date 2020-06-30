@@ -29,8 +29,12 @@ public class JmsConfiguration {
     private long receiveTimeout;
     @Value("${project.mq.queue}")
     private String queue;
-    @Value("${project.mq.messages}")
-    private String messages;
+    @Value("${project.mq.message}")
+    private String message;
+    @Value("${project.mq.message-path}")
+    private String messagePath;
+    @Value("${project.mq.message-type}")
+    private String messageType;
 
     public String getHost() {
         return host;
@@ -96,11 +100,27 @@ public class JmsConfiguration {
         this.queue = queue;
     }
 
-    public String getMessages() {
-        return messages;
+    public String getMessage() {
+        return message;
     }
 
-    public void setMessages(String messages) {
-        this.messages = messages;
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getMessagePath() {
+        return messagePath;
+    }
+
+    public void setMessagePath(String messagePath) {
+        this.messagePath = messagePath;
+    }
+
+    public String getMessageType() {
+        return messageType;
+    }
+
+    public void setMessageType(String messageType) {
+        this.messageType = messageType;
     }
 }
